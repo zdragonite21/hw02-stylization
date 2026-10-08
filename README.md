@@ -6,18 +6,6 @@
 
 Space to summon batman
 
-## pictures
-
-![alt text](image.png)
-
-![alt text](image-1.png)
-
-![alt text](image-2.png)
-
-![alt text](image-3.png)
-
-![alt text](image-4.png)
-
 ## details
 
 Model: https://sketchfab.com/3d-models/batman-multiversus-b6a84cca73f647ba8c86df799dd3eef3
@@ -30,6 +18,22 @@ Used FBM noise and grungy textures for the stylization.
 Textures: 
 https://texturelabs.org/textures/grunge_289/
 https://texturelabs.org/textures/grunge_352/
+
+## reference pic
+
+![alt text](batman2.png)
+
+## process pics
+
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
 
 ## Project Overview:
 In this assignment, you will use a 2D concept art piece as inspiration to create a 3D Stylized scene in Unity. This will give you the opportunity to explore stylized graphics techniques alongside non-photo-realistic (NPR) real-time rendering workflows in Unity.
