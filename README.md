@@ -11,11 +11,28 @@ Space to summon batman
 ## details
 
 Model: https://sketchfab.com/3d-models/batman-multiversus-b6a84cca73f647ba8c86df799dd3eef3
+
 All other aspects were created by me.
 
-The bat signal is a cone with backfaces rendered.
+how the scene is laid out:
+
+![alt text](image-7.png)
+
+The bat signal is a tapered cylinder with backfaces rendered.
+
+![alt text](image-5.png)
+
+I modeled the city based on lower manhattan.
+
+![alt text](image-6.png)
 
 Used FBM noise and grungy textures for the stylization.
+
+Created a procedural impact frame on summon.
+
+<p align="center">
+  <img src="image-4.png" width="500" alt="Description">
+</p>
 
 Textures: 
 https://texturelabs.org/textures/grunge_289/
@@ -35,7 +52,7 @@ https://texturelabs.org/textures/grunge_352/
 
 ![alt text](image-3.png)
 
-![alt text](image-4.png)
+
 
 ## Project Overview:
 In this assignment, you will use a 2D concept art piece as inspiration to create a 3D Stylized scene in Unity. This will give you the opportunity to explore stylized graphics techniques alongside non-photo-realistic (NPR) real-time rendering workflows in Unity.
