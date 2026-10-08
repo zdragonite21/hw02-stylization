@@ -1,5 +1,9 @@
 # HW 2: *3D Stylization*
 
+## controls
+
+Space to summon batman
+
 ## pictures
 
 ![alt text](image.png)

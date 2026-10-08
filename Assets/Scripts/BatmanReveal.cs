@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 using UnityEngine.Rendering.Universal;
+using TMPro;
 
 public class BatmanReveal : MonoBehaviour
 {
@@ -11,6 +12,9 @@ public class BatmanReveal : MonoBehaviour
     [SerializeField] FullScreenPassRendererFeature impactFeature;
     [SerializeField] FullScreenPassRendererFeature postFeature;
     [SerializeField] private float holdFrames = 1;
+    [SerializeField] TMP_Text label;
+    [SerializeField] float fadeDelay = 0.2f;
+    [SerializeField] float fadeSeconds = 1.5f;
 
     Renderer[] renderers;
     Material[][] originalMats;
@@ -27,7 +31,7 @@ public class BatmanReveal : MonoBehaviour
             originalMats[i] = renderers[i].sharedMaterials;
         
         QualitySettings.vSyncCount = 0;
-        Application.targetFrameRate = 60;
+        Application.targetFrameRate = 30;
     }
 
     void Update()
@@ -67,7 +71,8 @@ public class BatmanReveal : MonoBehaviour
         
         for (int i = 0; i < holdFrames; i++) yield return null;
 
-        // revert
+        // revert and fade in text
+        StartCoroutine(FadeInText());
         for (int i = 0; i < renderers.Length; i++)
             renderers[i].sharedMaterials = originalMats[i];
         cam.cullingMask = oldMask;
@@ -78,6 +83,23 @@ public class BatmanReveal : MonoBehaviour
         postFeature.SetActive(true);
         
         text.SetActive(true);
+    }
+    
+    IEnumerator FadeInText()
+    {
+        label.alpha = 0f;
+        text.SetActive(true);
+
+        yield return new WaitForSeconds(fadeDelay);
+
+        float t = 0f;
+        while (t < 1f)
+        {
+            t += Time.deltaTime / fadeSeconds;
+            label.alpha = Mathf.SmoothStep(0f, 1f, t);
+            yield return null;
+        }
+        label.alpha = 1f;
     }
 
     void ApplySilhouette()
