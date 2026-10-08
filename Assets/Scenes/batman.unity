@@ -7607,10 +7607,10 @@ MonoBehaviour:
     type: 2}
   postFeature: {fileID: 8346494020815429276, guid: 04b3e88365069a642a3bcb043610ea48,
     type: 2}
-  holdFrames: 1
+  holdFrames: 2
   label: {fileID: 1098960665}
   fadeDelay: 1
-  fadeSeconds: 8
+  fadeSeconds: 6
 --- !u!4 &1288404194
 Transform:
   m_ObjectHideFlags: 0

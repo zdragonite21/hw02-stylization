@@ -1,5 +1,7 @@
 # HW 2: *3D Stylization*
 
+![alt text](Recordings/summon_batman.gif)
+
 ## controls
 
 Space to summon batman
@@ -16,7 +18,18 @@ Space to summon batman
 
 ![alt text](image-4.png)
 
-rim: E8BF47
+## details
+
+Model: https://sketchfab.com/3d-models/batman-multiversus-b6a84cca73f647ba8c86df799dd3eef3
+All other aspects were created by me.
+
+The bat signal is a cone with backfaces rendered.
+
+Used FBM noise and grungy textures for the stylization.
+
+Textures: 
+https://texturelabs.org/textures/grunge_289/
+https://texturelabs.org/textures/grunge_352/
 
 ## Project Overview:
 In this assignment, you will use a 2D concept art piece as inspiration to create a 3D Stylized scene in Unity. This will give you the opportunity to explore stylized graphics techniques alongside non-photo-realistic (NPR) real-time rendering workflows in Unity.
