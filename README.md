@@ -1,4 +1,4 @@
-# HW 2: *3D Stylization*
+# Bat Summonings
 
 <p align="center">
   <img src="Recordings/summon_batman.gif" width="500" alt="Description">
