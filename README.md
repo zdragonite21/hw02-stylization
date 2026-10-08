@@ -1,6 +1,8 @@
 # HW 2: *3D Stylization*
 
-![alt text](Recordings/summon_batman.gif)
+<p align="center">
+  <img src="Recordings/summon_batman.gif" width="500" alt="Description">
+</p>
 
 ## controls
 
